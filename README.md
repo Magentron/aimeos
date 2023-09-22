@@ -1,3 +1,21 @@
+**NB: Overridden to make it easier to use Laravel Sail**
+
+To get started:
+
+```
+git clone https://github.com/Magentron/aimeos
+cd aimeos
+composer install
+[ -s .env ] || cp .env.example .env
+```
+
+Possibly check forwarding ports in the `.env` file.
+
+```
+vendor/bin/sail up -d --build
+vendor/bin/sail exec laravel.test composer run-script post-create-project-cmd
+```
+
 <p align="center">
     <a href="https://aimeos.org/">
         <img src="https://aimeos.org/fileadmin/template/icons/logo.png" alt="Aimeos logo" title="Aimeos" align="center" />
