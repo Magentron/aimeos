@@ -3,6 +3,7 @@
 /public/storage
 /public/vendor
 /storage/*.key
+/storage/clockwork/
 /vendor
 .env
 .env.backup
