@@ -56,7 +56,8 @@
             ": App\\Composer::configure",
             "@php artisan migrate --force",
             "App\\Composer::setup",
-            "App\\Composer::account",
+            ": App\\Composer::account",
+			"php artisan aimeos:account admin@example.com --password admin123 --super --admin",
             "App\\Composer::success"
         ],
         "post-update-cmd": [
